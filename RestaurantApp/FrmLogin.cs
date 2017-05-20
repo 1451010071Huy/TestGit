@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CustomMsBox; 
 
 using BUS;
 using DTO;
@@ -38,13 +39,13 @@ namespace RestaurantApp
 
             }
             else if (ketQua == 2)
-            {      
-                MessageBox.Show("Bạn chưa nhập user name, password!","Thống báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            {
+                MsgBox.Show("Bạn chưa nhập user name, password!", "Thông báo", MsgBox.Buttons.OKCancel, MsgBox.Icon.Warning);
             }
             else if (ketQua == 0)
             {
 
-                MessageBox.Show("Mật khẩu hoặc tài khoản không đúng!", "Thông Báo", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MsgBox.Show("Mật khẩu hoặc tài khoản không đúng!", "Thông Báo", MsgBox.Buttons.OK,MsgBox.Icon.Error);
             }
 
         }
@@ -130,7 +131,7 @@ namespace RestaurantApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            DialogResult result = MsgBox.Show("Bạn có muốn thoát?", "Thông báo", MsgBox.Buttons.OKCancel, MsgBox.Icon.Question);
             if (result == DialogResult.OK)
                 Application.Exit();
         }

@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CustomMsBox;
 using System.Data.SqlClient;
 using BUS;
 using DTO;
 
+#pragma warning disable 414, 3021
 namespace RestaurantApp
 {
     public partial class FrmQuanLyThucDon : Form
@@ -92,36 +93,36 @@ namespace RestaurantApp
                 {
                     getDanhMuc();
 
-                    MessageBox.Show("Thêm danh mục [" + txtTenDanhMuc.Text + "] thành công!", "Thông báo", MessageBoxButtons.OK);
+                    MsgBox.Show("Thêm danh mục [" + txtTenDanhMuc.Text + "] thành công!", "Thông báo", MsgBox.Buttons.OK);
                 }
                 else
                 {
-                    MessageBox.Show("Tên danh mục không được để trống!Thêm không thành công!");
+                    MsgBox.Show("Tên danh mục không được để trống!Thêm không thành công!");
                 }
 
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.Message);
+                MsgBox.Show(ex.Message);
             }
         }
         private void btnXoaNhom_Click(object sender, EventArgs e)
         {
             try
             {
-                if (MessageBox.Show("Bạn có chăc chắn xóa món này không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MsgBox.Show("Bạn có chăc chắn xóa món này không!", "Thông báo", MsgBox.Buttons.YesNo, MsgBox.Icon.Question) == DialogResult.Yes)
                 {
                     BUS_DanhMuc busDanhMuc = new BUS_DanhMuc();
                     DTO_DanhMuc dm = new DTO_DanhMuc(int.Parse(txtMaDanhMuc.Text));
                     busDanhMuc.XoaDanhMuc(dm);
                     getDanhMuc();//refresh lai bang danh muc       
                     if (txtTenDanhMuc.Text == txtTenDanhMuc.Text)
-                        MessageBox.Show("Xóa danh mục [" + txtTenDanhMuc.Text + "] " + "thành công!", "Thông báo", MessageBoxButtons.OK);
+                        MsgBox.Show("Xóa danh mục [" + txtTenDanhMuc.Text + "] " + "thành công!", "Thông báo", MsgBox.Buttons.OK);
                 }
             }
             catch (SqlException)
             {
-                MessageBox.Show("Danh mục đang được sử dụng, Xóa danh mục không thành công!", "Thông báo", MessageBoxButtons.OK);
+                MsgBox.Show("Danh mục đang được sử dụng, Xóa danh mục không thành công!", "Thông báo", MsgBox.Buttons.OK);
             }
         }
         private void btnSuaNhom_Click(object sender, EventArgs e)
@@ -133,11 +134,11 @@ namespace RestaurantApp
                     DTO_DanhMuc dm = new DTO_DanhMuc(int.Parse(txtMaDanhMuc.Text), txtTenDanhMuc.Text, txtMoTa.Text);
                     Dm.SuaDanhMuc(dm);
                     getDanhMuc();//refresh lai Danh Muc
-                    MessageBox.Show("Sửa danh mục [" + txtMaDanhMuc.Text + "] thành công!", "Thông báo", MessageBoxButtons.OK);
+                    MsgBox.Show("Sửa danh mục [" + txtMaDanhMuc.Text + "] thành công!", "Thông báo", MsgBox.Buttons.OK);
                 }
                 else
                 {
-                    MessageBox.Show("Bạn chưa chọn hàng danh mục để sửa!", "Thông báo", MessageBoxButtons.OK);
+                    MsgBox.Show("Bạn chưa chọn hàng danh mục để sửa!", "Thông báo", MsgBox.Buttons.OK);
                 }
             }
 
@@ -156,7 +157,7 @@ namespace RestaurantApp
                 {
                     if (txtTenMonAn.Text == "" || txtGiaTien.Text == "" || txtDonViTinhtd.Text == "")
                     {
-                        MessageBox.Show("Phải nhập đủ tên món ăn, giá và đơn vị tính!", "Thông báo", MessageBoxButtons.OK);
+                        MsgBox.Show("Phải nhập đủ tên món ăn, giá và đơn vị tính!", "Thông báo", MsgBox.Buttons.OK);
                     }
                     else if (txtTenMonAn.Text != "" && txtGiaTien.Text != "" && txtDonViTinhtd.Text != "")
                     {
@@ -164,18 +165,18 @@ namespace RestaurantApp
                         BUS_MonAn busMonAn = new BUS_MonAn();
                         busMonAn.ThemMonAn(ma);
                         getMonAn();
-                        MessageBox.Show("Thêm món [" + txtTenMonAn.Text + "] thành công!", "Thông báo", MessageBoxButtons.OK);
+                        MsgBox.Show("Thêm món [" + txtTenMonAn.Text + "] thành công!", "Thông báo", MsgBox.Buttons.OK);
                     }
                     getCombobox();//load lai combobox MonAn
                 }
                 else
                 {
-                    MessageBox.Show("Bạn phải xếp món ăn vào 1 danh mục có sẵn!", "Thông báo", MessageBoxButtons.OK);
+                    MsgBox.Show("Bạn phải xếp món ăn vào 1 danh mục có sẵn!", "Thông báo", MsgBox.Buttons.OK);
                 }
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.Message);
+                MsgBox.Show(ex.Message);
             }
         }
         private void btnSuaMon_Click(object sender, EventArgs e)
@@ -188,18 +189,18 @@ namespace RestaurantApp
                     DTO_MonAn dm = new DTO_MonAn(int.Parse(txtMaMonAn.Text), txtTenMonAn.Text, int.Parse(txtGiaTien.Text), int.Parse(txtMaDanhMuc.Text), txtDonViTinhtd.Text);
                     ma.SuaMonAn(dm);
                     getMonAn();//refresh lai Danh Muc
-                    MessageBox.Show("Sửa món [" + txtMaMonAn.Text + "] thành công!", "Thông báo");
+                    MsgBox.Show("Sửa món [" + txtMaMonAn.Text + "] thành công!", "Thông báo");
                 }
                 else
                 {
-                    MessageBox.Show("Bạn chưa chọn hàng món ăn để sửa!", "Thông báo", MessageBoxButtons.OK);
+                    MsgBox.Show("Bạn chưa chọn hàng món ăn để sửa!", "Thông báo", MsgBox.Buttons.OK);
                 }
 
             }
             catch (SqlException ex)
             {
 
-                MessageBox.Show(ex.Message);
+                MsgBox.Show(ex.Message);
             }
         }
         private void btnXoaMon_Click(object sender, EventArgs e)
@@ -208,19 +209,19 @@ namespace RestaurantApp
             {
                 if (txtMaMonAn.Text != "")
                 {
-                    if (MessageBox.Show("Bạn có chăc chắn xóa món này không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MsgBox.Show("Bạn có chăc chắn xóa món này không!", "Thông báo", MsgBox.Buttons.YesNo, MsgBox.Icon.Question) == DialogResult.Yes)
                     {
                         BUS_MonAn ma = new BUS_MonAn();
                         DTO_MonAn dm = new DTO_MonAn(int.Parse(txtMaMonAn.Text));
                         ma.XoaMonAn(dm);
                         getMonAn();
-                        MessageBox.Show("Xóa món [" + txtTenMonAn.Text + "] thành công!", "Thông báo", MessageBoxButtons.OK);
+                        MsgBox.Show("Xóa món [" + txtTenMonAn.Text + "] thành công!", "Thông báo", MsgBox.Buttons.OK);
                     }
                 }
             }
             catch (SqlException)
             {
-                MessageBox.Show("Món đang được sử dụng, Xóa không thành công!", "Thông báo", MessageBoxButtons.OK);
+                MsgBox.Show("Món đang được sử dụng, Xóa không thành công!", "Thông báo", MsgBox.Buttons.OK);
             }
 
         }
@@ -234,18 +235,18 @@ namespace RestaurantApp
                 string ghiChu = txtGhiChu.Text;
                 DTO_ChiTietMonAn ct = new DTO_ChiTietMonAn(Convert.ToInt32(maMonAn), Convert.ToInt32(maNguyenLieu), ghiChu);
                 Ct.ThemCongThuc(ct);
-                MessageBox.Show("Thêm nguyên liệu " + cbbTenNguyenLieu.GetItemText(cbbTenNguyenLieu.SelectedItem).Trim() + " vào " + cbbTenMonAn.GetItemText(cbbTenMonAn.SelectedItem).Trim() + " thành công!", "Thông báo", MessageBoxButtons.OK);
+                MsgBox.Show("Thêm nguyên liệu " + cbbTenNguyenLieu.GetItemText(cbbTenNguyenLieu.SelectedItem).Trim() + " vào " + cbbTenMonAn.GetItemText(cbbTenMonAn.SelectedItem).Trim() + " thành công!", "Thông báo", MsgBox.Buttons.OK);
 
                 getChiTietMonAn();
             }
 
             catch (SqlException)
             {
-                MessageBox.Show("Công thức món ăn đã tồn tại!", "Thông báo");
+                MsgBox.Show("Công thức món ăn đã tồn tại!", "Thông báo");
             }
             catch (NullReferenceException)// NullReferenceException kiem tra gia tri co bi null hay ko
             {
-                MessageBox.Show("Vui lòng chọn tên món ăn và nguyên liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MsgBox.Show("Vui lòng chọn tên món ăn và nguyên liệu!", "Thông báo", MsgBox.Buttons.OK, MsgBox.Icon.Question);
             }
         }
         private void btnXoaCongThuc_Click(object sender, EventArgs e)
@@ -257,23 +258,23 @@ namespace RestaurantApp
 
                 if (lblMaNguyenLieu.Text != "")
                 {
-                    if (MessageBox.Show("Bạn có chăc chắn xóa công thức này không!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MsgBox.Show("Bạn có chăc chắn xóa công thức này không!", "Thông báo", MsgBox.Buttons.YesNo, MsgBox.Icon.Question) == DialogResult.Yes)
                     {
                         BUS_ChiTietMonAn chitiet = new BUS_ChiTietMonAn();
                         DTO_ChiTietMonAn dm = new DTO_ChiTietMonAn(int.Parse(lblMaMonAn.Text), int.Parse(lblMaNguyenLieu.Text));
                         chitiet.XoaCongThuc(dm);
                         getChiTietMonAn();
-                        MessageBox.Show("Xóa công thức " + a + "[" + b + "] thành công!", "Thông báo", MessageBoxButtons.OK);
+                        MsgBox.Show("Xóa công thức " + a + "[" + b + "] thành công!", "Thông báo", MsgBox.Buttons.OK);
                     }
                 }
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.Message);
+                MsgBox.Show(ex.Message);
             }
             catch (Exception)
             {
-                MessageBox.Show("Không có dữ liệu để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MsgBox.Show("Không có dữ liệu để xóa!", "Thông báo", MsgBox.Buttons.OK, MsgBox.Icon.Question);
             }
         }
         int index;
@@ -354,7 +355,7 @@ namespace RestaurantApp
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
-                MessageBox.Show("Giá tiền là kí tự số!", "Thông Báo ", MessageBoxButtons.OK);
+                MsgBox.Show("Giá tiền là kí tự số!", "Thông Báo ", MsgBox.Buttons.OK);
             }
         }
     }
