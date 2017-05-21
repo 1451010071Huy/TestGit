@@ -41,6 +41,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -57,6 +73,12 @@
   <ItemGroup>
     <Compile Include="CustomMsBox\MsgBox.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusinessReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusinessReport.designer.cs">
+      <DependentUpon>FrmBusinessReport.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmHome.cs">
       <SubType>Form</SubType>
@@ -82,6 +104,12 @@
     <Compile Include="FrmQuanLyThucDon.designer.cs">
       <DependentUpon>FrmQuanLyThucDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStorage.designer.cs">
+      <DependentUpon>FrmStorage.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTienIch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,8 +118,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLNhaHangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNhaHangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBySupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBySupplier.designer.cs">
+      <DependentUpon>SearchBySupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier.designer.cs">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CustomMsBox\MsgBox.resx">
       <DependentUpon>MsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusinessReport.resx">
+      <DependentUpon>FrmBusinessReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
@@ -104,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQuanLyThucDon.resx">
       <DependentUpon>FrmQuanLyThucDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStorage.resx">
+      <DependentUpon>FrmStorage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTienIch.resx">
       <DependentUpon>FrmTienIch.cs</DependentUpon>
@@ -118,6 +169,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SearchBySupplier.resx">
+      <DependentUpon>SearchBySupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier.resx">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -148,6 +206,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLNhaHangDataSet.xsc">
+      <DependentUpon>QLNhaHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLNhaHangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNhaHangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNhaHangDataSet.xss">
+      <DependentUpon>QLNhaHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReportIncome.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\17506367_1799344146749781_131650751_n.png" />
   </ItemGroup>
   <ItemGroup>
@@ -262,6 +334,19 @@
     <None Include="Resources\customer-service.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\ic_add_black_24dp_2x.png" />
+    <Content Include="Resources\ic_delete_black_24dp_2x.png" />
+    <Content Include="Resources\ic_delete_black_24dp_2x1.png" />
+    <None Include="Resources\ic_delete_black_24dp_2x2.png" />
+    <Content Include="Resources\ic_exit_to_app_black_24dp_2x.png" />
+    <Content Include="Resources\ic_exit_to_app_black_24dp_2x1.png" />
+    <None Include="Resources\ic_exit_to_app_black_24dp_2x2.png" />
+    <Content Include="Resources\ic_person_add_black_24dp_2x.png" />
+    <Content Include="Resources\ic_person_add_black_24dp_2x1.png" />
+    <None Include="Resources\ic_person_add_black_24dp_2x2.png" />
+    <Content Include="Resources\ic_update_black_24dp_2x.png" />
+    <Content Include="Resources\ic_update_black_24dp_2x1.png" />
+    <None Include="Resources\ic_update_black_24dp_2x2.png" />
     <Content Include="Resources\restaurant.ico" />
     <Content Include="Resources\restaurant.png" />
   </ItemGroup>

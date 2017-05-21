@@ -45,6 +45,8 @@
     <Compile Include="DTO_Login.cs" />
     <Compile Include="DTO_MonAn.cs" />
     <Compile Include="DTO_NguyenLieu.cs" />
+    <Compile Include="DTO_Storage.cs" />
+    <Compile Include="DTO_Suppliers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

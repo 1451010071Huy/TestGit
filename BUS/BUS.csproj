@@ -45,6 +45,7 @@
     <Compile Include="BUS_Login.cs" />
     <Compile Include="BUS_MonAn.cs" />
     <Compile Include="BUS_NguyenLieu.cs" />
+    <Compile Include="BUS_Storage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
