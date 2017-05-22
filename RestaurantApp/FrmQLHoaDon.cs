@@ -9,6 +9,7 @@ using System.Threading;
 using System.Windows.Forms;
 using System.Drawing.Printing;
 using Microsoft.VisualBasic;
+using CustomMsBox;
 
 using DAO;
 using BUS;
@@ -139,7 +140,7 @@ namespace RestaurantApp
             }
             catch (Exception)
             {
-                MessageBox.Show("Chưa có thông tin để xóa", "Thông báo", MessageBoxButtons.OK);
+                MsgBox.Show("Chưa có thông tin để xóa", "Thông báo", MsgBox.Buttons.OK);
             }
         }
 
@@ -163,7 +164,7 @@ namespace RestaurantApp
                 }
                 else
                 {
-                    MessageBox.Show("Chưa nhập thông tin để in", "Thông báo", MessageBoxButtons.OK);
+                    MsgBox.Show("Chưa nhập thông tin để in", "Thông báo", MsgBox.Buttons.OK);
                 }   
             }
             catch (Exception)
@@ -284,7 +285,7 @@ namespace RestaurantApp
             }
             catch (Exception )
             {
-                MessageBox.Show("Hiện tại chưa có món ăn nào được đặt tại bàn này","Thông báo",MessageBoxButtons.OK);
+                MsgBox.Show("Hiện tại chưa có món ăn nào được đặt tại bàn này","Thông báo",MsgBox.Buttons.OK);
             }
            
         }
