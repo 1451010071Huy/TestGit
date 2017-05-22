@@ -115,8 +115,8 @@ namespace RestaurantApp
 
                 for (int i = 0; i <= index; i++)
                 {
-                    string TenMon = dgvMonAnVaban.Rows[i].Cells[2].Value.ToString().Trim();
-                    string GiaTien = dgvMonAnVaban.Rows[i].Cells[3].Value.ToString().Trim();
+                    string TenMon = dgvMonAnVaban.Rows[i].Cells[1].Value.ToString().Trim();
+                    string GiaTien = dgvMonAnVaban.Rows[i].Cells[2].Value.ToString().Trim();
                     ltvTenSanPham.Items.Add(TenMon);
                     string Tam = _DoiSoSangDonViTienTe(GiaTien);
                     ltvThanhTien.Items.Add(Tam);
@@ -125,7 +125,6 @@ namespace RestaurantApp
             }
             catch (Exception)
             {
-                MessageBox.Show("Chưa có thông tin để thêm", "Thông báo", MessageBoxButtons.OK);
             }
         }
 
@@ -181,7 +180,7 @@ namespace RestaurantApp
             int startX = 10;
             int startY = 10;
             int offset = 40;
-            graphic.DrawString("Hóa đơn thanh toán", new Font("Courier New", 17), new SolidBrush(Color.Black), startX  + 10, startY);
+            graphic.DrawString("Hóa đơn thanh toán", new Font("Courier New", 17), new SolidBrush(Color.Black), startX  + 60, startY);
             string top = "Tên Sản Phẩm".PadRight(24) + "Thành Tiền";
             graphic.DrawString(top, font, new SolidBrush(Color.Black), startX, startY + offset);
             offset = offset + (int)FontHeight; //make the spacing consistent
@@ -211,11 +210,13 @@ namespace RestaurantApp
 
             offset = offset + (int)FontHeight + 5; //make the spacing consistent              
             graphic.DrawString("Xin chân thành cảm ơn quý khách!", font, new SolidBrush(Color.Black), startX + 10, startY + offset);
-            offset = offset + (int)FontHeight + 5; //make the spacing consistent              
-            graphic.DrawString("HẸN GẶP LẠI!", font, new SolidBrush(Color.Black), startX + 20, startY + offset);
-            offset = offset + (int)FontHeight + 5; //make the spacing consistent              
-            graphic.DrawString("1 sp của sv OU!", font, new SolidBrush(Color.Black), startX + 10, startY + offset);
-            offset = offset + (int)FontHeight + 5; //make the spacing consistent  
+            offset = offset + (int)FontHeight + 5; //make the spacing consistent    
+            graphic.DrawString("----------------------------------", font, new SolidBrush(Color.Black), startX, startY + offset);
+            offset = offset + (int)FontHeight + 5; //make the spacing consistent
+            graphic.DrawString("HẸN GẶP LẠI!", font, new SolidBrush(Color.Black), startX + 110, startY + offset);
+            offset = offset + (int)FontHeight + 5; //make the spacing consistent                                
+            index = dgvMonAnVaban.RowCount;//dem so dong trong datagrid view
+            
         }
 
         private void lsbTenSanPham_SelectedIndexChanged(object sender, EventArgs e)
@@ -241,7 +242,7 @@ namespace RestaurantApp
         {
             DataProvider dp = new DataProvider();
             SqlConnection cnn = dp.getConnect();//Ham nay tra ve 1 chuoi ket noi
-            string sqlMonAn = "SELECT * FROM ChiTietHoaDon";
+            string sqlMonAn = "SELECT MaBan,TenMonAn,GiaTien,ThoiGian FROM MonAnVaBan,MonAn WHERE MonAnVaBan.MaMonAn = MonAn.MaMonAn AND MaBan = '" + 1 + "'";
             SqlDataAdapter da = new SqlDataAdapter(sqlMonAn, cnn);// van chuyen du lieu
             DataSet ds = new DataSet();//Tao 1 bang ao
             da.Fill(ds);//do du lieu vao bang ao
@@ -262,7 +263,7 @@ namespace RestaurantApp
             int MaBan = int.Parse(cbbMonAnVaBan.SelectedValue.ToString().Trim());
             DataProvider dp = new DataProvider();
             SqlConnection cnn = dp.getConnect();//Ham nay tra ve 1 chuoi ket noi
-            string sqlMonAn = "SELECT *FROM ChiTietHoaDon WHERE MaBan = '" + MaBan+ "'";
+            string sqlMonAn = "SELECT Maban,TenMonAn,GiaTien,ThoiGian FROM MonAnVaBan,MonAn WHERE MonAnVaBan.MaMonAn = MonAn.MaMonAn AND MaBan = '" + MaBan + "'";
             SqlDataAdapter da = new SqlDataAdapter(sqlMonAn, cnn);// van chuyen du lieu
             DataSet ds = new DataSet();//Tao 1 bang ao
             da.Fill(ds);//do du lieu vao bang ao
