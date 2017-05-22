@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.labNgayGio = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labGio = new System.Windows.Forms.Label();
@@ -39,7 +40,7 @@
             this.labNguoiDung = new System.Windows.Forms.Label();
             this.labLoaiTaiKhoan = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblDangXuat = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -157,16 +158,16 @@
             this.timer.Enabled = true;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // label3
+            // lblDangXuat
             // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Location = new System.Drawing.Point(1218, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Đăng xuất";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.lblDangXuat.AutoSize = true;
+            this.lblDangXuat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblDangXuat.Location = new System.Drawing.Point(1218, 68);
+            this.lblDangXuat.Name = "lblDangXuat";
+            this.lblDangXuat.Size = new System.Drawing.Size(56, 13);
+            this.lblDangXuat.TabIndex = 10;
+            this.lblDangXuat.Text = "Đăng xuất";
+            this.lblDangXuat.Click += new System.EventHandler(this.lblDangXuat_Click);
             // 
             // pictureBox3
             // 
@@ -344,7 +345,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GreenYellow;
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblDangXuat);
             this.Controls.Add(this.labLoaiTaiKhoan);
             this.Controls.Add(this.labNguoiDung);
             this.Controls.Add(this.pictureBox3);
@@ -361,8 +362,8 @@
             this.Controls.Add(this.btnQuanLyHoaDon);
             this.Controls.Add(this.btnPhucVuKhachHang);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmHome";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Restaurant App";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -401,7 +402,7 @@
         private System.Windows.Forms.Label labNguoiDung;
         private System.Windows.Forms.Label labLoaiTaiKhoan;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblDangXuat;
     }
 }
 

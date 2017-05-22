@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CustomMsBox;
 namespace RestaurantApp
 {
     public partial class FrmTienIch : Form
@@ -67,13 +67,13 @@ namespace RestaurantApp
             }
             catch
             {
-                MessageBox.Show("Bạn chưa nhập giá trị để chuyển đổi", "Thông báo", MessageBoxButtons.OK);
+                MsgBox.Show("Bạn chưa nhập giá trị để chuyển đổi", "Thông báo", MsgBox.Buttons.OK);
             }
         }
 
         private void btnDong_Click(object sender, EventArgs e)
         {
-            if (DialogResult.Yes == MessageBox.Show("Bạn có muốn đóng không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            if (DialogResult.Yes == MsgBox.Show("Bạn có muốn đóng không", "Thông báo", MsgBox.Buttons.YesNo, MsgBox.Icon.Question))
                 this.Close();
 
         }
@@ -87,7 +87,7 @@ namespace RestaurantApp
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
-                MessageBox.Show("Giá tiền là kí tự số ", "Thông Báo ", MessageBoxButtons.OK);
+                MsgBox.Show("Giá tiền là kí tự số ", "Thông Báo ", MsgBox.Buttons.OK);
             }
 
         }

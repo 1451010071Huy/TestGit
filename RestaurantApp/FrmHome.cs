@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-
+using CustomMsBox;
 //using DTO;
 using BUS;
 
@@ -24,7 +24,6 @@ namespace RestaurantApp
         private void Form1_Load(object sender, EventArgs e)
         {
             labNgayGio.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            
         }
 
 
@@ -42,18 +41,7 @@ namespace RestaurantApp
             labGio.Text = DateTime.Now.ToString("HH:mm");
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-            DialogResult dlr = MessageBox.Show("Bạn có muốn đăng xuất không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dlr == DialogResult.Yes)
-            {
-                this.Hide();
-                FrmLogin frmLogin = new FrmLogin();
-                frmLogin.ShowDialog();
-                this.Close();
-            }
-           
-        }
+
 
         private void btnQuanLyThucDon_Click(object sender, EventArgs e)
         {
@@ -72,5 +60,20 @@ namespace RestaurantApp
             FrmTienIch frmTienIch = new FrmTienIch();
             frmTienIch.ShowDialog();
         }
+
+        private void lblDangXuat_Click(object sender, EventArgs e)
+        {
+             DialogResult dlr = MsgBox.Show("Bạn có muốn đăng xuất không?", "Thông báo", MsgBox.Buttons.YesNo, MsgBox.Icon.Question);
+            if (dlr == DialogResult.Yes)
+            {
+                this.Hide();
+                FrmLogin frmLogin = new FrmLogin();
+                frmLogin.ShowDialog();
+                this.Close();
+            }
+        }
+
+
+
     }
 }
