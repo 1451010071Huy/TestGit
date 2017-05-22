@@ -17,7 +17,7 @@ namespace RestaurantApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmQuanLyHoaDon());
+            Application.Run(new FrmLogin());
         }
     }
 }
