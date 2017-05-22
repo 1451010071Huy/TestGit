@@ -97,7 +97,7 @@ namespace RestaurantApp
                 }
                 else
                 {
-                    MsgBox.Show("Tên danh mục không được để trống!Thêm không thành công!");
+                    MsgBox.Show("Tên danh mục không được để trống!Thêm không thành công!","Thông báo",MsgBox.Buttons.OK);
                 }
 
             }
@@ -189,7 +189,7 @@ namespace RestaurantApp
                     DTO_MonAn dm = new DTO_MonAn(int.Parse(txtMaMonAn.Text), txtTenMonAn.Text, int.Parse(txtGiaTien.Text), int.Parse(txtMaDanhMuc.Text), txtDonViTinhtd.Text);
                     ma.SuaMonAn(dm);
                     getMonAn();//refresh lai Danh Muc
-                    MsgBox.Show("Sửa món [" + txtMaMonAn.Text + "] thành công!", "Thông báo");
+                    MsgBox.Show("Sửa món [" + txtMaMonAn.Text + "] thành công!", "Thông báo",MsgBox.Buttons.OK);
                 }
                 else
                 {
@@ -242,7 +242,7 @@ namespace RestaurantApp
 
             catch (SqlException)
             {
-                MsgBox.Show("Công thức món ăn đã tồn tại!", "Thông báo");
+                MsgBox.Show("Công thức món ăn đã tồn tại!", "Thông báo",MsgBox.Buttons.OK);
             }
             catch (NullReferenceException)// NullReferenceException kiem tra gia tri co bi null hay ko
             {
