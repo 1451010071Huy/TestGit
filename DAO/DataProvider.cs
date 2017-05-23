@@ -14,7 +14,12 @@ namespace DAO
     public class DataProvider
     {
         string cnStr = "";
-        SqlConnection cnn;
+        public SqlConnection cnn;
+        public DataProvider()
+        {
+            cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
+            cnn = new SqlConnection(cnStr);
+        }
         public SqlConnection getConnect()
         {
             cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
@@ -60,19 +65,22 @@ namespace DAO
             }
         }
 
-        public SqlDataReader ExecuteReader(String sql)
-        {
-            Connect();
+       public SqlDataReader ExecuteReader(String sql)
+       {            
             try
             {
+                Connect();
                 SqlCommand cmd = new SqlCommand(sql, cnn);
                 return (cmd.ExecuteReader());
             }
             catch (SqlException ex)
             {
-
                 throw ex;
             }
+            finally
+            {
+                DisConnect();
+            }            
         }
 
         public int ExcuteNonQuery(string sql,CommandType type, List<SqlParameter> paras)

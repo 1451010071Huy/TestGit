@@ -45,7 +45,9 @@
     <Compile Include="BUS_Login.cs" />
     <Compile Include="BUS_MonAn.cs" />
     <Compile Include="BUS_NguyenLieu.cs" />
+    <Compile Include="MonAnvaBan_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PVKH_BUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">

@@ -47,7 +47,9 @@
     <Compile Include="DAO_MonAn.cs" />
     <Compile Include="DAO_NguyenLieu.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="MonAnvaBan_DAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PVKH_DAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

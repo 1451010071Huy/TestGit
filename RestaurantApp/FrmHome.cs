@@ -73,6 +73,12 @@ namespace RestaurantApp
             }
         }
 
+        private void btnPhucVuKhachHang_Click(object sender, EventArgs e)
+        {
+            FrmPVKH frmPVKH = new FrmPVKH();
+            frmPVKH.ShowDialog();
+        }
+
 
 
     }
