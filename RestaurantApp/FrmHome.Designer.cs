@@ -267,7 +267,6 @@
             this.btnQuanLyThucDon.Text = "Quản lý thực đơn";
             this.btnQuanLyThucDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnQuanLyThucDon.UseVisualStyleBackColor = false;
-            this.btnQuanLyThucDon.Click += new System.EventHandler(this.btnQuanLyThucDon_Click);
             // 
             // btnTienIch
             // 
@@ -285,7 +284,6 @@
             this.btnTienIch.Text = "Tiện ích";
             this.btnTienIch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTienIch.UseVisualStyleBackColor = false;
-            this.btnTienIch.Click += new System.EventHandler(this.btnTienIch_Click);
             // 
             // btnBaoCaoThongKe
             // 
@@ -320,7 +318,6 @@
             this.btnQuanLyHoaDon.Text = "Quản lý hóa đơn";
             this.btnQuanLyHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnQuanLyHoaDon.UseVisualStyleBackColor = false;
-            this.btnQuanLyHoaDon.Click += new System.EventHandler(this.btnQuanLyHoaDon_Click);
             // 
             // btnPhucVuKhachHang
             // 
