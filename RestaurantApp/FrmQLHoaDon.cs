@@ -243,7 +243,7 @@ namespace RestaurantApp
         {
             DataProvider dp = new DataProvider();
             SqlConnection cnn = dp.getConnect();//Ham nay tra ve 1 chuoi ket noi
-            string sqlMonAn = "SELECT MaBan,TenMonAn,GiaTien,ThoiGian FROM MonAnVaBan,MonAn WHERE MonAnVaBan.MaMonAn = MonAn.MaMonAn AND MaBan = '" + 1 + "'";
+            string sqlMonAn = "SELECT MaBan,TenMonAn,MonAn.GiaTien,ThoiGian FROM ChiTietHoaDon,HoaDon,MonAn where ChiTietHoaDon.MaMonAn = MonAn.MaMonAn and ChiTietHoaDon.MaHoaDon = HoaDon.MaHoaDon";
             SqlDataAdapter da = new SqlDataAdapter(sqlMonAn, cnn);// van chuyen du lieu
             DataSet ds = new DataSet();//Tao 1 bang ao
             da.Fill(ds);//do du lieu vao bang ao
@@ -264,7 +264,7 @@ namespace RestaurantApp
             int MaBan = int.Parse(cbbMonAnVaBan.SelectedValue.ToString().Trim());
             DataProvider dp = new DataProvider();
             SqlConnection cnn = dp.getConnect();//Ham nay tra ve 1 chuoi ket noi
-            string sqlMonAn = "SELECT Maban,TenMonAn,GiaTien,ThoiGian FROM MonAnVaBan,MonAn WHERE MonAnVaBan.MaMonAn = MonAn.MaMonAn AND MaBan = '" + MaBan + "'";
+            string sqlMonAn = "SELECT MaBan,TenMonAn,MonAn.GiaTien,ThoiGian FROM ChiTietHoaDon,HoaDon,MonAn where ChiTietHoaDon.MaMonAn = MonAn.MaMonAn and ChiTietHoaDon.MaHoaDon = HoaDon.MaHoaDon AND MaBan = '" + MaBan + "'";
             SqlDataAdapter da = new SqlDataAdapter(sqlMonAn, cnn);// van chuyen du lieu
             DataSet ds = new DataSet();//Tao 1 bang ao
             da.Fill(ds);//do du lieu vao bang ao
@@ -289,5 +289,6 @@ namespace RestaurantApp
             }
            
         }
+
     }
 }

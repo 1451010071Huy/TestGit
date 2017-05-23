@@ -69,7 +69,7 @@
             this.ltvTenSanPham.ItemHeight = 16;
             this.ltvTenSanPham.Location = new System.Drawing.Point(16, 54);
             this.ltvTenSanPham.Name = "ltvTenSanPham";
-            this.ltvTenSanPham.Size = new System.Drawing.Size(325, 276);
+            this.ltvTenSanPham.Size = new System.Drawing.Size(278, 276);
             this.ltvTenSanPham.TabIndex = 1;
             this.ltvTenSanPham.SelectedIndexChanged += new System.EventHandler(this.lsbTenSanPham_SelectedIndexChanged);
             // 
@@ -78,16 +78,16 @@
             this.ltvThanhTien.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ltvThanhTien.FormattingEnabled = true;
             this.ltvThanhTien.ItemHeight = 16;
-            this.ltvThanhTien.Location = new System.Drawing.Point(347, 54);
+            this.ltvThanhTien.Location = new System.Drawing.Point(300, 54);
             this.ltvThanhTien.Name = "ltvThanhTien";
-            this.ltvThanhTien.Size = new System.Drawing.Size(199, 276);
+            this.ltvThanhTien.Size = new System.Drawing.Size(246, 276);
             this.ltvThanhTien.TabIndex = 3;
             this.ltvThanhTien.SelectedIndexChanged += new System.EventHandler(this.lsbThanhTien_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(344, 34);
+            this.label2.Location = new System.Drawing.Point(297, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 17);
             this.label2.TabIndex = 2;
@@ -108,7 +108,7 @@
             0});
             this.nudTongTien.Name = "nudTongTien";
             this.nudTongTien.ReadOnly = true;
-            this.nudTongTien.Size = new System.Drawing.Size(220, 23);
+            this.nudTongTien.Size = new System.Drawing.Size(173, 23);
             this.nudTongTien.TabIndex = 9;
             this.nudTongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudTongTien.ThousandsSeparator = true;
@@ -136,7 +136,7 @@
             0,
             0});
             this.nudTienMat.Name = "nudTienMat";
-            this.nudTienMat.Size = new System.Drawing.Size(220, 23);
+            this.nudTienMat.Size = new System.Drawing.Size(173, 23);
             this.nudTienMat.TabIndex = 11;
             this.nudTienMat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudTienMat.ThousandsSeparator = true;
@@ -166,7 +166,7 @@
             0});
             this.nudTienTra.Name = "nudTienTra";
             this.nudTienTra.ReadOnly = true;
-            this.nudTienTra.Size = new System.Drawing.Size(220, 23);
+            this.nudTienTra.Size = new System.Drawing.Size(173, 23);
             this.nudTienTra.TabIndex = 13;
             this.nudTienTra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudTienTra.ThousandsSeparator = true;
