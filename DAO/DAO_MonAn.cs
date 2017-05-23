@@ -32,8 +32,8 @@ namespace DAO
         }
         public void SuaMonAn(DTO_MonAn ma)
         {
-            dp.Connect();// phải có hàm kết nối mới thêm được
             SqlConnection cnn = dp.getConnect();
+            dp.Connect();// phải có hàm kết nối mới thêm được
             string suaMon = "UPDATE MonAn SET TenMonAn = N'" + ma.TenMonAn+ "',GiaTien ='" + ma.GiaTien +"',MaDanhMuc = '" + ma.MaDanhMuc + "', DonViTinh = N'" + ma.DonViTinh + "' WHERE MaMonAn = '" + ma.MaMonAn + "'";
             SqlCommand cmd = new SqlCommand(suaMon, cnn);
             cmd.ExecuteNonQuery();
