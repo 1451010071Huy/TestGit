@@ -59,7 +59,7 @@ namespace RestaurantApp
         }
         private DataSet GetReport()
         {
-            cmd = new SqlCommand(" Select ChiTietHoaDon.*,(SoLuong*GiaTien) As Tong  from ChiTietHoaDon   Where CAST(ThoiGian AS DATE)=@ThoiGian");
+            cmd = new SqlCommand(" Select ChiTietHoaDon.*  from ChiTietHoaDon   Where CAST(ThoiGian AS DATE)=@ThoiGian");
             cmd.Parameters.AddWithValue("@ThoiGian", Convert.ToDateTime(dateTimePicker1.Value.ToShortDateString()));
             return new BUS_Storage().LoadReport(cmd);
         }

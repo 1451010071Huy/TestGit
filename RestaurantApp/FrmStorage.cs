@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using DTO;
+using CustomMsBox;
 
 namespace RestaurantApp
 {
@@ -53,11 +54,11 @@ namespace RestaurantApp
             catch (SqlException ex)
             {
 
-                MessageBox.Show(ex.Message);
+                MsgBox.Show("Bạn phải nhập đầy đủ thông tin", "Lỗi", MsgBox.Buttons.OK);
             }
             catch (FormatException ex)
             {
-                MessageBox.Show(ex.Message);
+                MsgBox.Show("Bạn phải nhập đầy đủ thông tin", "Lỗi", MsgBox.Buttons.OK);
             }
           
 
@@ -85,7 +86,7 @@ namespace RestaurantApp
             catch (FormatException )
             {
          
-                MessageBox.Show("Bạn phải nhập đầy đủ thông tin", "Lỗi", MessageBoxButtons.OK);
+                MsgBox.Show("Bạn phải nhập đầy đủ thông tin", "Lỗi", MsgBox.Buttons.OK);
             
             }
             
@@ -105,7 +106,7 @@ namespace RestaurantApp
             catch (FormatException)
             {
                 
-                MessageBox.Show("Bạn phải nhập đầy đủ thông tin", "Lỗi", MessageBoxButtons.OK);
+                MsgBox.Show("Bạn phải nhập đầy đủ thông tin", "Lỗi", MsgBox.Buttons.OK);
             }
 
         }

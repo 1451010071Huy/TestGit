@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnTao = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -59,6 +60,14 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Báo cáo theo ngày";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.reportViewer1.Location = new System.Drawing.Point(3, 65);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(667, 246);
+            this.reportViewer1.TabIndex = 6;
             // 
             // dateTimePicker1
             // 
@@ -114,6 +123,14 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Báo cáo theo tháng";
             // 
+            // reportViewer2
+            // 
+            this.reportViewer2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.reportViewer2.Location = new System.Drawing.Point(3, 65);
+            this.reportViewer2.Name = "reportViewer2";
+            this.reportViewer2.Size = new System.Drawing.Size(667, 246);
+            this.reportViewer2.TabIndex = 6;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -162,22 +179,6 @@
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 2;
             // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.reportViewer1.Location = new System.Drawing.Point(3, 65);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(667, 246);
-            this.reportViewer1.TabIndex = 6;
-            // 
-            // reportViewer2
-            // 
-            this.reportViewer2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.reportViewer2.Location = new System.Drawing.Point(3, 65);
-            this.reportViewer2.Name = "reportViewer2";
-            this.reportViewer2.Size = new System.Drawing.Size(667, 246);
-            this.reportViewer2.TabIndex = 6;
-            // 
             // FrmBusinessReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +213,7 @@
         private System.Windows.Forms.Label label2;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
 
 
     }

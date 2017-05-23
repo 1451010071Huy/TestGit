@@ -47,6 +47,7 @@
             this.btnInHoaDon = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             ((System.ComponentModel.ISupportInitialize)(this.nudTongTien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTienMat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTienTra)).BeginInit();
@@ -339,6 +340,7 @@
         private System.Windows.Forms.Button btnChon;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
     }
 }
 
