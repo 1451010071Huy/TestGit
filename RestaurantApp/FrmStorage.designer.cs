@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mID));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.text = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -339,8 +340,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.text);
             this.Controls.Add(this.dataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mID";
-            this.Text = "FrmStorage";
+            this.Text = "Quản lý kho hàng";
             this.Load += new System.EventHandler(this.FrmStorage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
