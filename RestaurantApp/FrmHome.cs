@@ -55,6 +55,24 @@ namespace RestaurantApp
             }
         }
 
+        private void btnQuanLyThucDon_Click(object sender, EventArgs e)
+        {
+            FrmQuanLyThucDon frm = new FrmQuanLyThucDon();
+            frm.ShowDialog();
+        }
+
+        private void btnQuanLyHoaDon_Click(object sender, EventArgs e)
+        {
+            FrmQuanLyHoaDon frm = new FrmQuanLyHoaDon();
+            frm.ShowDialog();
+        }
+
+        private void btnTienIch_Click(object sender, EventArgs e)
+        {
+            FrmTienIch frm = new FrmTienIch();
+            frm.ShowDialog();
+        }
+
 
 
     }
