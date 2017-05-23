@@ -41,6 +41,8 @@ namespace RestaurantApp
             labGio.Text = DateTime.Now.ToString("HH:mm");
         }
 
+
+
         private void lblDangXuat_Click(object sender, EventArgs e)
         {
              DialogResult dlr = MsgBox.Show("Bạn có muốn đăng xuất không?", "Thông báo", MsgBox.Buttons.YesNo, MsgBox.Icon.Question);
@@ -51,18 +53,6 @@ namespace RestaurantApp
                 frmLogin.ShowDialog();
                 this.Close();
             }
-        }
-
-        private void btnQuanLyKhoHang_Click(object sender, EventArgs e)
-        {
-            mID frmStorage = new mID();
-            frmStorage.ShowDialog();
-        }
-
-        private void btnBaoCaoThongKe_Click(object sender, EventArgs e)
-        {
-            FrmBusinessReport frmReport = new FrmBusinessReport();
-            frmReport.ShowDialog();
         }
 
         private void btnQuanLyThucDon_Click(object sender, EventArgs e)
