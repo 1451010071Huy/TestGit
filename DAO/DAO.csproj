@@ -41,8 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO_ChiTietMonAn.cs" />
+    <Compile Include="DAO_DanhMuc.cs" />
     <Compile Include="DAO_Login.cs" />
     <Compile Include="DAO_Storage.cs" />
+    <Compile Include="DAO_MonAn.cs" />
+    <Compile Include="DAO_NguyenLieu.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
