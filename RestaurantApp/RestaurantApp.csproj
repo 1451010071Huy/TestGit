@@ -61,6 +61,7 @@
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,6 +75,11 @@
   <ItemGroup>
     <Compile Include="CustomMsBox\MsgBox.cs">
       <SubType>Form</SubType>
+    </Compile>
+<Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
     <Compile Include="FrmBusinessReport.cs">
       <SubType>Form</SubType>
@@ -92,6 +98,12 @@
     </Compile>
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPhucVuKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPhucVuKH.designer.cs">
+      <DependentUpon>FrmPhucVuKH.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmQLHoaDon.cs">
       <SubType>Form</SubType>
@@ -142,11 +154,17 @@
     <EmbeddedResource Include="FrmBusinessReport.resx">
       <DependentUpon>FrmBusinessReport.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPhucVuKH.resx">
+      <DependentUpon>FrmPhucVuKH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQLHoaDon.resx">
       <DependentUpon>FrmQLHoaDon.cs</DependentUpon>
@@ -180,6 +198,11 @@
       <DependentUpon>Supplier.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -351,8 +374,16 @@
     <Content Include="Resources\ic_update_black_24dp_2x1.png" />
     <Content Include="Resources\ic_update_black_24dp_2x2.png" />
     <None Include="Resources\ic_update_black_24dp_2x3.png" />
+    <None Include="Resources\USD-tien-Dollar-My.jpg" />
+    <None Include="Resources\tải xuống.png" />
+    <None Include="Resources\BanAn.png" />
+    <None Include="Resources\kuzina-slide.jpg" />
+    <None Include="Resources\images %281%29.jpg" />
     <Content Include="Resources\restaurant.ico" />
     <Content Include="Resources\restaurant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

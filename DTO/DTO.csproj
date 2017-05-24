@@ -47,7 +47,9 @@
     <Compile Include="DTO_NguyenLieu.cs" />
     <Compile Include="DTO_Storage.cs" />
     <Compile Include="DTO_Suppliers.cs" />
+    <Compile Include="MonAnvaBan_DTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PVKH_DTO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
