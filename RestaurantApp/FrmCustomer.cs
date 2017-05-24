@@ -21,7 +21,16 @@ namespace RestaurantApp
         }
         private List<DTO_Customer> GetCustomer()
         {
-            return new BUS_Customer().GetCustomer();
+            try
+            {
+                return new BUS_Customer().GetCustomer();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+            
         }
 
         private void FrmCustomer_Load(object sender, EventArgs e)

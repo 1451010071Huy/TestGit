@@ -35,28 +35,22 @@ namespace DAO
                     pTenKH = dr.GetString(2);
                     pSoDienThoaiKH = dr.GetString(3);
                     pNgaySinhKH = dr.GetDateTime(4);
-                    pNoiSinhKH = dr.GetString(8);
-                    pGioiTinhKH = dr.GetString(9);
-                    pSoCMNDKH = dr.GetString(10);
                     pDiemTichLuy = dr.GetInt32(5);
                     pDiaChiThuongTru = dr.GetString(6);
                     pEmailKH = dr.GetString(7);
-
+                    pNoiSinhKH = dr.GetString(8);
+                    pGioiTinhKH = dr.GetString(9);
+                    pSoCMNDKH = dr.GetString(10);          
                     DTO_Customer emp = new DTO_Customer(pMaKH, pHoKH, pTenKH, pSoDienThoaiKH, pNgaySinhKH, pNoiSinhKH, pGioiTinhKH, pSoCMNDKH, pDiemTichLuy, pDiaChiThuongTru, pEmailKH);
                     list.Add(emp);
 
                 }
-                dr.Close();
                 return list;
             }
             catch (SqlException ex)
             {
                 
                 throw ex;
-            }
-            finally
-            {
-
             }
         }
         public int AddCustomer(DTO_Customer emp)
