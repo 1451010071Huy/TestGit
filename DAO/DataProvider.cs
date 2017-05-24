@@ -65,8 +65,8 @@ namespace DAO
             }
         }
 
-       public SqlDataReader ExecuteReader(String sql)
-       {            
+        public SqlDataReader ExecuteReader(String sql)
+        {
             try
             {
                 Connect();
@@ -76,9 +76,8 @@ namespace DAO
             catch (SqlException ex)
             {
                 throw ex;
-            }         
+            }
         }
-
         public int ExcuteNonQuery(string sql,CommandType type, List<SqlParameter> paras)
         {
             Connect();
@@ -99,10 +98,6 @@ namespace DAO
             catch (SqlException ex)
             {
                 throw ex;
-            }
-            finally
-            {
-                DisConnect();
             }
         }
     }

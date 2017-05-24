@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO_ChiTietMonAn.cs" />
+    <Compile Include="DTO_Customer.cs" />
     <Compile Include="DTO_DanhMuc.cs" />
+    <Compile Include="DTO_Employee.cs" />
     <Compile Include="DTO_Login.cs" />
     <Compile Include="DTO_MonAn.cs" />
     <Compile Include="DTO_NguyenLieu.cs" />

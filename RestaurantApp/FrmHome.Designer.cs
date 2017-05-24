@@ -101,7 +101,7 @@
             this.panel1.Controls.Add(this.labNgayGio);
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(505, 128);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(211, 183);
             this.panel1.TabIndex = 2;
@@ -114,7 +114,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.ForeColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(272, 129);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(225, 182);
             this.panel2.TabIndex = 6;
@@ -183,7 +183,7 @@
             // 
             this.pictureBox3.Image = global::RestaurantApp.Properties.Resources.people;
             this.pictureBox3.Location = new System.Drawing.Point(1628, 26);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(63, 54);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -195,7 +195,7 @@
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::RestaurantApp.Properties.Resources.images;
             this.pictureBox2.Location = new System.Drawing.Point(272, 559);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(445, 209);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +206,7 @@
             // 
             this.pictureBox1.Image = global::RestaurantApp.Properties.Resources._1461053991_2014619113333436269;
             this.pictureBox1.Location = new System.Drawing.Point(276, 331);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(445, 209);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,13 +223,14 @@
             this.btnQuanLyKhachHang.Image = global::RestaurantApp.Properties.Resources.customer_service;
             this.btnQuanLyKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuanLyKhachHang.Location = new System.Drawing.Point(1137, 618);
-            this.btnQuanLyKhachHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQuanLyKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuanLyKhachHang.Name = "btnQuanLyKhachHang";
             this.btnQuanLyKhachHang.Size = new System.Drawing.Size(391, 150);
             this.btnQuanLyKhachHang.TabIndex = 0;
             this.btnQuanLyKhachHang.Text = "Quản lý khách hàng";
             this.btnQuanLyKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnQuanLyKhachHang.UseVisualStyleBackColor = false;
+            this.btnQuanLyKhachHang.Click += new System.EventHandler(this.btnQuanLyKhachHang_Click);
             // 
             // btnQuanLyNhanVien
             // 
@@ -241,13 +242,14 @@
             this.btnQuanLyNhanVien.Image = global::RestaurantApp.Properties.Resources._003_time;
             this.btnQuanLyNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuanLyNhanVien.Location = new System.Drawing.Point(1137, 449);
-            this.btnQuanLyNhanVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQuanLyNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuanLyNhanVien.Name = "btnQuanLyNhanVien";
             this.btnQuanLyNhanVien.Size = new System.Drawing.Size(391, 150);
             this.btnQuanLyNhanVien.TabIndex = 0;
             this.btnQuanLyNhanVien.Text = "Quản lý nhân viên";
             this.btnQuanLyNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnQuanLyNhanVien.UseVisualStyleBackColor = false;
+            this.btnQuanLyNhanVien.Click += new System.EventHandler(this.btnQuanLyNhanVien_Click);
             // 
             // btnQuanLyKhoHang
             // 
@@ -259,7 +261,7 @@
             this.btnQuanLyKhoHang.Image = global::RestaurantApp.Properties.Resources._005_buildings;
             this.btnQuanLyKhoHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuanLyKhoHang.Location = new System.Drawing.Point(1137, 286);
-            this.btnQuanLyKhoHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQuanLyKhoHang.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuanLyKhoHang.Name = "btnQuanLyKhoHang";
             this.btnQuanLyKhoHang.Size = new System.Drawing.Size(391, 150);
             this.btnQuanLyKhoHang.TabIndex = 0;
@@ -278,7 +280,7 @@
             this.btnQuanLyThucDon.Image = global::RestaurantApp.Properties.Resources._007_menu;
             this.btnQuanLyThucDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuanLyThucDon.Location = new System.Drawing.Point(1137, 128);
-            this.btnQuanLyThucDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQuanLyThucDon.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuanLyThucDon.Name = "btnQuanLyThucDon";
             this.btnQuanLyThucDon.Size = new System.Drawing.Size(391, 150);
             this.btnQuanLyThucDon.TabIndex = 0;
@@ -297,7 +299,7 @@
             this.btnTienIch.Image = global::RestaurantApp.Properties.Resources._002_wrench;
             this.btnTienIch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTienIch.Location = new System.Drawing.Point(739, 618);
-            this.btnTienIch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTienIch.Margin = new System.Windows.Forms.Padding(4);
             this.btnTienIch.Name = "btnTienIch";
             this.btnTienIch.Size = new System.Drawing.Size(391, 150);
             this.btnTienIch.TabIndex = 0;
@@ -316,7 +318,7 @@
             this.btnBaoCaoThongKe.Image = global::RestaurantApp.Properties.Resources._004_bar_chart;
             this.btnBaoCaoThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBaoCaoThongKe.Location = new System.Drawing.Point(739, 449);
-            this.btnBaoCaoThongKe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBaoCaoThongKe.Margin = new System.Windows.Forms.Padding(4);
             this.btnBaoCaoThongKe.Name = "btnBaoCaoThongKe";
             this.btnBaoCaoThongKe.Size = new System.Drawing.Size(391, 150);
             this.btnBaoCaoThongKe.TabIndex = 0;
@@ -335,7 +337,7 @@
             this.btnQuanLyHoaDon.Image = global::RestaurantApp.Properties.Resources._006_invoice;
             this.btnQuanLyHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuanLyHoaDon.Location = new System.Drawing.Point(739, 286);
-            this.btnQuanLyHoaDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQuanLyHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuanLyHoaDon.Name = "btnQuanLyHoaDon";
             this.btnQuanLyHoaDon.Size = new System.Drawing.Size(391, 150);
             this.btnQuanLyHoaDon.TabIndex = 0;
@@ -354,7 +356,7 @@
             this.btnPhucVuKhachHang.Image = global::RestaurantApp.Properties.Resources._008_food;
             this.btnPhucVuKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPhucVuKhachHang.Location = new System.Drawing.Point(739, 128);
-            this.btnPhucVuKhachHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPhucVuKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.btnPhucVuKhachHang.Name = "btnPhucVuKhachHang";
             this.btnPhucVuKhachHang.Size = new System.Drawing.Size(391, 150);
             this.btnPhucVuKhachHang.TabIndex = 0;
@@ -387,7 +389,7 @@
             this.Controls.Add(this.btnPhucVuKhachHang);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Restaurant App";

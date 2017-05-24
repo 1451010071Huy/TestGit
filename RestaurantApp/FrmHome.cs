@@ -91,6 +91,18 @@ namespace RestaurantApp
             frmPVKH.ShowDialog();
         }
 
+        private void btnQuanLyNhanVien_Click(object sender, EventArgs e)
+        {
+            FrmEmployee frm = new FrmEmployee();
+            frm.ShowDialog();
+        }
+
+        private void btnQuanLyKhachHang_Click(object sender, EventArgs e)
+        {
+            FrmCustomer frm = new FrmCustomer();
+            frm.ShowDialog();
+        }
+
 
 
     }
