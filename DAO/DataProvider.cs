@@ -76,11 +76,7 @@ namespace DAO
             catch (SqlException ex)
             {
                 throw ex;
-            }
-            finally
-            {
-                DisConnect();
-            }            
+            }         
         }
 
         public int ExcuteNonQuery(string sql,CommandType type, List<SqlParameter> paras)
