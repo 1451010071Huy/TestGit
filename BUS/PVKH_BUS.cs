@@ -14,6 +14,7 @@ namespace BUS
     {
         public List<PVKH_DTO> GetPVKH_BUS(string sql)
         {
+            
             try
             {
                 return new PVKH_DAO().GetPVKH_DAO(sql);

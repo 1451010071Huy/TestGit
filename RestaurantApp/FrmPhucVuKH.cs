@@ -25,19 +25,21 @@ namespace RestaurantApp
         string hinhthucthanhtoan;
         public FrmPVKH()
         {
-            InitializeComponent();           
+            InitializeComponent();
+           
+                 
         }
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
             this.Close();
             FrmLogin FrmLogin = new FrmLogin();
             FrmLogin.ShowDialog();
-        }
+        } 
 
         private void FrmPhucVuKH_Load(object sender, EventArgs e)
-        {
+        {          
             dgvMenu.DataSource = GetPVKH_GUI();
             dgvMonAnvaBan.DataSource = GetMonAnvaBan_GUI();
         }
@@ -57,7 +59,6 @@ namespace RestaurantApp
 
         private List<MonAnvaBan_DTO> GetMaBan_GUI1(int maban)
         {
-            //string sql = "SELECT ChiTietHoaDon.* ,MonAn.TenMonAn FROM ChiTietHoaDon,MonAn Where ChiTietHoaDon.MaMonAn = MonAn.MaMonAn  and  MaBan = N'1001'";
             string sql = "SELECT * FROM MonAnvaBan WHERE MaBan = " + maban;
             return new MonAnvaBan_BUS().GetMonAnvaBan_BUS(sql);
         }
@@ -177,27 +178,6 @@ namespace RestaurantApp
                 throw ex;
             }
         }
-        private void btInHoaDon_Click(object sender, EventArgs e)
-        {
-            //FrmInHoaDonPVKH FrmInHoaDon = new FrmInHoaDonPVKH();
-            //if (rdbtTienMat.Checked == true)
-            //{
-            //    MessageBox.Show("Bạn vừa chọn hình thức thanh toán là:" + rdbtTienMat.Text);
-            //    //FrmInHoaDon.ShowDialog();
-            //    return;
-            //}
-            //else if (rdbtCard.Checked == true)
-            //{
-            //    MessageBox.Show("Bạn vừa chọn hình thức thanh toán là:" + rdbtCard.Text);
-            //    FrmInHoaDon.ShowDialog();
-            //    return;
-            //}   
-            //else
-            //{
-            //    MessageBox.Show("Bạn chưa chọn hình thức thanh toán!");
-            //}
-            
-        }
         private void btHuy_Click(object sender, EventArgs e)
         {
             
@@ -214,8 +194,6 @@ namespace RestaurantApp
 
         private void bt1Ban1_Click(object sender, EventArgs e)
         {
-            //int index = dgvMenu.CurrentCell.RowIndex;
-            //int maban = Convert.ToInt32(dgvMonAnvaBan.Rows[index].Cells[0].Value.ToString().Trim());
             txtbBan.Text = bt1Ban1.Text;
             txtbKhuVuc.Text = tabPage1.Text;
             maban = 1;
@@ -381,18 +359,16 @@ namespace RestaurantApp
 
         private void dgvMenu_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 int index = dgvMenu.CurrentCell.RowIndex;
                 x = Convert.ToInt32(dgvMenu.Rows[index].Cells[0].Value.ToString().Trim()); // Ma4 mon1 an
-                
-                
+
+
                 tenmon = dgvMenu.Rows[index].Cells[1].Value.ToString().Trim();
                 MessageBox.Show(tenmon);
-                //int name = Convert.ToInt32(tenmon);
-                //giatien = Convert.ToDouble(dgvMenu.Rows[index].Cells[3].Value.ToString().Trim());
                 BUS.MonAnvaBan_BUS AddMonAn = new MonAnvaBan_BUS();
-                //int maban = Convert.ToInt32(dgvMonAnvaBan.Rows[index].Cells[0].Value.ToString().Trim());
+
                 DateTime realtime = System.DateTime.Now;
                 AddMonAn.Add_Monan(maban, x, realtime);
 
@@ -401,13 +377,12 @@ namespace RestaurantApp
                 string sql = "select * from MonAnVaBan where MaBan = " + maban;
                 dt = mon.GetTheoSoBan(sql);
                 dgvMonAnvaBan.DataSource = dt;
-              //  MessageBox.Show(x.ToString() + tenmon + giatien.ToString());
-               // dgvMonAnvaBan.DataSource = GetMaBan_GUI3();
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Loi");
-            //}
+            }
+               
+            catch(SqlException )
+            {
+                 MessageBox.Show("Không thêm được !!! Phải chọn bàn ăn trước khi đặt món !!!");
+            }
         }
 
         private void dgvMonAnvaBan_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -417,9 +392,7 @@ namespace RestaurantApp
         }
 
         private void btLuu_Click(object sender, EventArgs e)
-        {
-            //FrmInHoaDonPVKH FrmInHoaDon = new FrmInHoaDonPVKH();
-            
+        {            
                     if (rdbtCard.Checked != false || rdbtTienMat.Checked != false)
                     {
                         try
@@ -438,14 +411,16 @@ namespace RestaurantApp
                         }
                         catch
                         {
-                            MessageBox.Show("Loi");
+                            MessageBox.Show("Đã lưu");
                         }                
                    }            
                     else
                     {
                         MessageBox.Show("Bạn chưa chọn hình thức thanh toán!");
                     }         
-        }    
+        }
+
+        
     }
 }
 
