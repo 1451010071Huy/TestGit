@@ -250,6 +250,7 @@
             this.btnQuanLyKhoHang.Text = "Quản lý kho hàng";
             this.btnQuanLyKhoHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnQuanLyKhoHang.UseVisualStyleBackColor = false;
+            this.btnQuanLyKhoHang.Click += new System.EventHandler(this.btnQuanLyKhoHang_Click);
             // 
             // btnQuanLyThucDon
             // 
@@ -303,6 +304,7 @@
             this.btnBaoCaoThongKe.Text = "Báo cáo thống kê";
             this.btnBaoCaoThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBaoCaoThongKe.UseVisualStyleBackColor = false;
+            this.btnBaoCaoThongKe.Click += new System.EventHandler(this.btnBaoCaoThongKe_Click);
             // 
             // btnQuanLyHoaDon
             // 

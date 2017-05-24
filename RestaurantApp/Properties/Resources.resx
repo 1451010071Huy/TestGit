@@ -118,11 +118,68 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="restaurant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\restaurant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customer_service1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customer-service.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_006_invoice1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\006-invoice.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="technology" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\technology.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_003_time1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\003-time.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_update_black_24dp_2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_update_black_24dp_2x3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_003_verification" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\003-verification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_005_buildings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\005-buildings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_003_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\003-time.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrows2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrows2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_003_signs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\003-signs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_003_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\003-lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_002_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\002-delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_004_bar_chart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\004-bar-chart.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_007_menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\007-menu.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_001_rotate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-rotate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Doi_ngu_nhan_vien" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Doi ngu nhan vien.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="people1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\people.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exchange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\002-exchange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_008_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\008-food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_1461053991_2014619113333436269" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1461053991_2014619113333436269.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,109 +187,61 @@
   <data name="food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="people" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_001_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restaurant1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\restaurant.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_001_locked_padlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-locked-padlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_001_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\001-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_001_people" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\001-people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_001_rotate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\001-rotate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_002_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\002-delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_002_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\002-logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_005_buildings1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\005-buildings.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_002_wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_003_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\003-lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_003_signs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\003-signs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_003_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\003-time.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_003_verification" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\003-verification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_004_bar_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\004-bar-chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="_004_user_silhouette" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\004-user-silhouette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_005_buildings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\005-buildings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_006_invoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\006-invoice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_007_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\007-menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_008_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\008-food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="customer_service" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customer-service.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="technology" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\technology.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrows" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exchange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\002-exchange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_007_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\007-menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrows1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrows1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_004_bar_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\004-bar-chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrows2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrows2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_person_add_black_24dp_2x1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_person_add_black_24dp_2x11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="customer_service1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customer-service.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="people1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\people.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_001_people" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\001-people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_002_wrench1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\002-wrench.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_003_time1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\003-time.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="customer_service" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customer-service.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_004_bar_chart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\004-bar-chart.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_006_invoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\006-invoice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_005_buildings1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\005-buildings.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_002_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\002-logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_006_invoice1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\006-invoice.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrows1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrows1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_007_menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\007-menu.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="people" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="restaurant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\restaurant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="restaurant1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\restaurant.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_delete_black_24dp_2x2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_delete_black_24dp_2x21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

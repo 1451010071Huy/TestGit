@@ -73,6 +73,18 @@ namespace RestaurantApp
             frm.ShowDialog();
         }
 
+        private void btnQuanLyKhoHang_Click(object sender, EventArgs e)
+        {
+            mID frmStorage = new mID();
+            frmStorage.ShowDialog();
+        }
+
+        private void btnBaoCaoThongKe_Click(object sender, EventArgs e)
+        {
+            FrmBusinessReport rp = new FrmBusinessReport();
+            rp.ShowDialog();
+        }
+
 
 
     }
