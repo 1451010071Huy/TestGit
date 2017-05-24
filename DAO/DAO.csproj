@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO_ChiTietMonAn.cs" />
+    <Compile Include="DAO_Customer.cs" />
     <Compile Include="DAO_DanhMuc.cs" />
+    <Compile Include="DAO_Employee.cs" />
     <Compile Include="DAO_Login.cs" />
     <Compile Include="DAO_MonAn.cs" />
     <Compile Include="DAO_NguyenLieu.cs" />
